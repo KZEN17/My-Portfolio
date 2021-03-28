@@ -7,7 +7,7 @@ import PortfliosPage from './Pages/PortfoliosPage';
 import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import { useState, React } from 'react';
-
+import { AnimatePresence, motion } from 'framer-motion';
 function App() {
 	const [navToggle, setNavToggle] = useState(false);
 
@@ -27,23 +27,25 @@ function App() {
 			</div>
 			<div className="main-content">
 				<div className="content">
-					<Switch>
-						<Route path="/" exact>
-							<HomePage />
-						</Route>
-						<Route path="/about" exact>
-							<AboutPage />
-						</Route>
-						<Route path="/portfolios" exact>
-							<PortfliosPage />
-						</Route>
-						<Route path="/blogs" exact>
-							<BlogsPage />
-						</Route>
-						<Route path="/contact" exact>
-							<ContactPage />
-						</Route>
-					</Switch>
+					<AnimatePresence>
+						<Switch>
+							<Route path="/" exact>
+								<HomePage />
+							</Route>
+							<Route path="/about" exact>
+								<AboutPage />
+							</Route>
+							<Route path="/portfolios" exact>
+								<PortfliosPage />
+							</Route>
+							<Route path="/blogs" exact>
+								<BlogsPage />
+							</Route>
+							<Route path="/contact" exact>
+								<ContactPage />
+							</Route>
+						</Switch>
+					</AnimatePresence>
 				</div>
 			</div>
 		</div>

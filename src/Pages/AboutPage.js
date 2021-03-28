@@ -6,10 +6,30 @@ import ServicesSection from '../Components/ServicesSection';
 import design from '../img/design.svg';
 import intelligence from '../img/intelligence.svg';
 import gamedev from '../img/game-dev.svg';
-
+import { motion } from 'framer-motion';
 function AboutPage() {
+	const pageTransition = {
+		type: 'tween',
+		ease: 'linear',
+		duration: 2,
+	};
+	const pageVariants = {
+		in: {
+			opacity: 1,
+		},
+		out: {
+			opacity: 0,
+		},
+	};
 	return (
-		<div className="AboutPage">
+		<motion.div
+			className="AboutPage"
+			initial="out"
+			exit="out"
+			animate="in"
+			transition={pageTransition}
+			variants={pageVariants}
+		>
 			<Tittle title={'About Me'} span={'About Me'} />
 			<ImageSection />
 			<Tittle title={'My Skills'} span={'My Skills'} />
@@ -46,7 +66,7 @@ function AboutPage() {
 					text={'Simple but addicitive games built with FlutterFlare'}
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

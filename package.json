@@ -11,9 +11,11 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "emailjs-com": "^2.6.4",
+    "framer-motion": "^4.0.3",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

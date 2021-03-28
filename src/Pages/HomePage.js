@@ -4,14 +4,50 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 
+import Particles from 'react-particles-js';
 function HomePage() {
+	const pageTransition = {
+		type: 'tween',
+		ease: 'linear',
+		duration: 2,
+	};
+	const pageVariants = {
+		in: {
+			opacity: 1,
+		},
+		out: {
+			opacity: 0,
+		},
+	};
 	return (
-		<div className="HomePage">
+		<motion.div
+			initial="out"
+			exit="out"
+			animate="in"
+			className="HomePage"
+			transition={pageTransition}
+			variants={pageVariants}
+		>
 			<header className="hero">
+				<div className="particles">
+					{' '}
+					<Particles
+						params={{
+							particles: {
+								color: '#fff',
+								line_linked: {
+									color: '#037fff',
+								},
+							},
+							retina_detect: 'true',
+						}}
+					/>
+				</div>
 				<h1 className="hero-text">
 					Hi, I am
-					<span> Zlatko Nikoloski</span>
+					<span> Zlatko </span>
 				</h1>
 				<p className="h-sub-text">
 					I am a web and mobile app developer based in the Philippines,
@@ -52,7 +88,7 @@ function HomePage() {
 					</button>
 				</div>
 			</header>
-		</div>
+		</motion.div>
 	);
 }
 
