@@ -36,6 +36,9 @@ function HomePage() {
 					<Particles
 						params={{
 							particles: {
+								number: {
+									value: 40,
+								},
 								color: '#fff',
 								line_linked: {
 									color: '#037fff',
