@@ -8,6 +8,8 @@ import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import { useState, React } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 function App() {
 	const [navToggle, setNavToggle] = useState(false);
 
@@ -21,9 +23,12 @@ function App() {
 				<NavBar />
 			</div>
 			<div className="nav-btn" onClick={navClick}>
-				<div className="lines-1"></div>
+				<div className="lines-1">
+					<FontAwesomeIcon icon={faBars} size="2x"></FontAwesomeIcon>
+				</div>
+				{/* <div className="lines-1"></div>
 				<div className="lines-2"></div>
-				<div className="lines-3"></div>
+				<div className="lines-3"></div> */}
 			</div>
 			<div className="main-content">
 				<div className="content">
