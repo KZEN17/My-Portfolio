@@ -26,9 +26,6 @@ function App() {
 				<div className="lines-1">
 					<FontAwesomeIcon icon={faBars} size="2x"></FontAwesomeIcon>
 				</div>
-				{/* <div className="lines-1"></div>
-				<div className="lines-2"></div>
-				<div className="lines-3"></div> */}
 			</div>
 			<div className="main-content">
 				<div className="content">
