@@ -32,6 +32,7 @@ canvas {
 }
 
 .icons {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,12 +45,15 @@ canvas {
 			transition: all 0.4s ease-in-out;
 		}
 		.fb:hover {
-			color: blue;
+			color: rgb(81, 81, 196);
 		}
 		.gh:hover {
-			color: rgba(212, 45, 212, 0.788);
+			color: goldenrod;
 		}
 		.yt:hover {
+			color: blueviolet;
+		}
+		.li:hover {
 			color: red;
 		}
 	}
@@ -67,6 +71,9 @@ button {
 button:hover {
 	color: #037fff;
 	background-color: #ffffff;
+	a {
+		color: #037fff;
+	}
 	// border: 0.1rem solid #037fff;
 }
 a {
