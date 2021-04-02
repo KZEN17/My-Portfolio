@@ -1,7 +1,6 @@
 import React from 'react';
 import avatar from '../img/avatar.png';
 import { NavLink } from 'react-router-dom';
-import Particles from 'react-particles-js';
 function Navbar() {
 	return (
 		<div className="NavBar">

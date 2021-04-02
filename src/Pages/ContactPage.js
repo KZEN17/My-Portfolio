@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import Tittle from '../Components/Tittle';
 import emailjs from 'emailjs-com';
-import phone from '../img/phone.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faEnvelope,
 	faMapMarkerAlt,
 	faPhoneAlt,
-	faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import MessageBox from '../Components/MessageBox';
 import LoadingBox from '../Components/LoadingBox';
