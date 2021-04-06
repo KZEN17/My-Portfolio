@@ -19,7 +19,10 @@ function App() {
 
 	return (
 		<div className="App">
-			<div className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}>
+			<div
+				className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}
+				onClick={navClick}
+			>
 				<NavBar />
 			</div>
 			<div className="nav-btn" onClick={navClick}>
